@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  maria-db:
+    container_name: maria-db
+    build: .
+    ports:
+      - 7681:7681
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+    networks:
+      - the_network
+
+networks:
+  the_network:
+    name: labnet
+    driver: bridge
