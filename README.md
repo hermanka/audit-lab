@@ -13,3 +13,10 @@ Just another lab for practice.
 `http://localhost:7681`
 - Login to MySQL server
 `mysql -uroot -p`
+
+## Credentials
+
+|                |USERNAME                       |PASSWORD					   |
+|----------------|-------------------------------|-----------------------------|
+|Terminal		 |`user				`            |Passw0rd           		   |
+|MySQL			 |`root				`            |toor           			   |
