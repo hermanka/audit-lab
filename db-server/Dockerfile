@@ -9,9 +9,10 @@ ENV USERNAME="user" \
 COPY ./entrypoint.sh /
 COPY ./wrapper.sh /
 COPY ./skel/ /etc/skel
+COPY ./rsyslog.conf /etc/rsyslog.conf
 
 RUN apk update && \
-    apk add --no-cache tini bash ttyd tzdata sudo nano && \
+    apk add --no-cache tini bash ttyd tzdata sudo nano rsyslog && \
     chmod +x /entrypoint.sh && \
     chmod -R a+rwX /var/lib/mysql && \
     touch /etc/.firstrun && \

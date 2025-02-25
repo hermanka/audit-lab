@@ -6,6 +6,9 @@
 # Start the second process
 ./scripts/run.sh &
 
+# Start the third process
+rsyslogd -n &
+
 # Wait for any process to exit
 wait -n
 

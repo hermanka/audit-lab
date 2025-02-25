@@ -1,12 +1,17 @@
 version: "3.3"
 services:
   maria-db:
-    container_name: maria-db
-    build: .
+    container_name: db-server
+    build: ./db-server
     ports:
       - 7681:7681
     environment:
       MYSQL_ROOT_PASSWORD: toor
+    networks:
+      - the_network
+  rsyslog:
+    container_name: rsyslog-server
+    build: ./rsyslog-server
     networks:
       - the_network
 
