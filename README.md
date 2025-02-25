@@ -10,8 +10,10 @@ Just another lab for practice.
 ## Configuration
 
 - In the "rsyslog-server" container, open the /etc/rsyslog.conf file, add the following configuration at the end of the line.
+
   ![rsyslog-server configuration](con1.png)
 - In the "db-server" container, open the /etc/rsyslog.conf file, add the following configuration at the end of the line.
+
   ![rsyslog-server configuration](con2.png)
 
 ## Connect to MySQL
